@@ -67,7 +67,7 @@ footer {
     margin-top: 7px;
 }
 .div {
-        display: inline-flex;
+    width: 100%;max-width: 1200px;height: 100px;display: flex;justify-content: center;
 
 }
 img{

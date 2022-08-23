@@ -1,0 +1,67 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    size: 24px; color: #242424; font-weight: 900;
+}
+
+h2{
+    size: 20px; color:r #606060; font-weight: 800;
+}
+
+p{
+    size: 14px;
+}
+
+li{
+    font-family: monospace; size: 18px;
+}
+
+a{
+    font-weight: bold;
+}
+li a{
+    color: orange; text-decoration-line: underline;
+}
+
+p{
+    margin-top: 30px; margin-bottom: 30px;
+}
+
+ul{
+  margin-left: 100px; padding: 20px; border-style:solid; border-width: 2px; border-color: blue; 
+}
+
+/*Provincia neuquen en 2 lineas */
+ul li:nth-child(2){ 
+    color: green;
+}
+li:nth-child(2) a:visited{ color: green;
+}
+/*Pintado de verde en 2 lineas */
+ul li:nth-child(6){
+    color: green;
+}
+li:nth-child(6) a:visited{ color: green;
+}
+
+
+ul{
+    max-width: 40%;
+}
+body{
+    background-color:#F5DEB3;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 10px;
+}
+
+li:hover{
+    background-color:rgba(255, 125, 0, 0.5);
+}
