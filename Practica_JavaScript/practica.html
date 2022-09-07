@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Practica/practica.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--EJERCICIO N°1-->
+    <h3>Ingrese tres numeros distintos</h3>
+    <main>
+
+        <div class="formulario">
+            <label for="number">Numero N°1</label>
+            <input type="text" id="number1">
+
+            <label for="number">Numero N°2</label>
+            <input type="text" id="number2">
+
+            <label for="number">Numero N°3</label>
+            <input type="text" id="number3">
+
+            <button type="button" onclick="carga()">Enviar</button>
+            <h3 id="mostrarNumMayor"></h3>
+        </div>
+    </main>
+
+    <!--EJERCICIO N°2-->
+    <br> <br>
+    <h3>Ingrese un valor entero</h3>
+    <div class="formulario">
+        <label for="number">Numero Entero</label>
+        <input type="text" id="numeroEntero">
+
+        <button type="button" onclick="carga2()">Enviar</button>
+    </div>
+
+    <!--EJERCICIO N°3-->
+    <script>
+        var nombre= prompt("Nombre del postulante: ");
+        var cantPreguntas= prompt("Cantidad de preguntas que hizo: ");
+        var preguntasCorrectas= prompt("Cantidad de preguntas correctas: ")
+
+        var pregIncorrectas = cantPreguntas - preguntasCorrectas;
+        var aux= pregIncorrectas * 100 /cantPreguntas;
+        var porcentajeOk = 100 - aux;
+
+        if (porcentajeOk >= 90){
+            alert("El postulante tiene un nivel superior");
+        }
+        if (porcentajeOk >=70.5 && porcentajeOk <90){
+            alert("El postulante tien un nivel");
+        }
+        if (porcentajeOk >= 50 && porcentajeOk < 70.5){
+            alert("El postulante tiene un nivel regular");
+        }
+        if (porcentajeOk < 50){
+            alert("El postulante esta fuera de nivel");
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!--EJERCICIO N°4-->
+    <br><br>
+    <h3>Datos del alumno</h3>
+    <div class="formulario">
+        <form>
+            <p>
+                <label>Nombre <input type="text" id="nombre" /></label>
+            </p>
+
+            <p>
+                <label for="text">Apellido <input type="text" id="apellido"></label>
+            </p>
+
+            <p>
+                <label for="number">Domicilio <input type="text" id="domicilio"></label>
+            </p>
+
+            <p>
+                <label for="number">Curso <input type="number" id="curso"></label>
+            </p>
+
+            <p>
+                <label for="text">Carrera <input type="text" id="carrera"></label>
+            </p>
+
+            <p>
+                <label for="text">Materia <input type="text" id="materia"></label>
+            </p>
+
+            <p>
+                <label for="number">Nota primer parcial <input type="number" id="nota"></label>
+            </p>
+            <button type="button" onclick="carga4()">Enviar</button>
+            <hr>
+
+
+            <h3 id="mostrarDatos"> <br> </h3>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+<script src="practica.js"></script>
+
+</html>

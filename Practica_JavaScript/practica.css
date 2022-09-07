@@ -1,0 +1,17 @@
+
+strong{
+    text-align: right;
+    color: blue;
+
+}
+.formulario {
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+form p label{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
