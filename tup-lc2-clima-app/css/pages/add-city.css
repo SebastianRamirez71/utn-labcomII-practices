@@ -40,6 +40,7 @@ header {
     width: 215px;
     height: 35px;
     border-radius: 5px;
+    border:  1px solid;
     margin-bottom: 10px;
 }
 .input{
@@ -50,12 +51,22 @@ header {
     background-color: #00594C;
     color:  white;
 }
+
+
+
+/* Para no sobrecargar codigo, inserte los h2 en una sola declaracion*/
+.exito h2, .error h2, .añadida h2{
+    font-size: medium;
+    color: white;
+    text-align: center;
+}
+
 .exito{
     margin-top: 35px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 25px;
     background-color: #28a745;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -63,18 +74,13 @@ header {
     margin-left: 350px;
     margin-bottom: 35px;
 }
-.exito h2{
-    font-size: medium;
-    color: white;
-    text-align: center;
-}
 
 
 .error{
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 25px;
     background-color: #dc3545;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -82,26 +88,17 @@ header {
     margin-left: 350px;
     margin-bottom: 35px;
 }
-.error h2{
-    font-size: medium;
-    color: white;
-    text-align: center;
-}
+
 
 .añadida{
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 25px;
     background-color: #ffc107;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 350px;
     margin-left: 350px;
     margin-bottom: 35px;
-}
-.añadida h2{
-    font-size: medium;
-    color: white;
-    text-align: center;
 }

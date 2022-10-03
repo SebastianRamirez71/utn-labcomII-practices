@@ -6,25 +6,29 @@
 <title>Help Clima</title>
 <!-- Estilos CSS -->
 <link rel="shortcut icon" href="/imgg/Icono.png" />
-<link rel="stylesheet" href="/css/pages/common.css">
+<link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/css/pages/help.css">
 
 </head>
 
+
 <body>
-<header>
-<h1>
-<span>Clima App</span>
-</h1>
-<nav>
-<ul>
-   <li> <img src="/img/Icono.png" width="70px" height="70px"></li>
-<li><a href="/index.html">Mi App</a></li>
-<li><a href="/add-city.html">Agregar Ciudad</a></li>
-<li class="current-page"><a href="/help.html">Ayuda</a></li>
-</ul>
-</nav>
-</header>
+    <header>
+    <nav class="titulo">
+        <img src="/img/Icono.png" width="60px" height="60px">
+        <h1>
+        <span>Clima App</span>
+        </h1>
+    </nav>
+    
+    <nav class="secciones">
+    <ul> 
+        <li><a href="/index.html">Mi App</a></li>
+        <li><a href="/add-city.html">Agregar Ciudad</a></li>
+        <li class="current-page"><a href="#">Ayuda</a></li>
+    </ul>
+    </nav>
+    </header>
 <!-- Contenido principal de la página -->
 <main>
     <h2>Ayuda Clima App v.1.0</h2>
@@ -39,23 +43,23 @@
             <label for="email">Email: </label>
             <input type="text" id="email">
         <br>
-        <br>
             <label for="textarea">Mensaje:</label>
             <textarea name="Mensaje"cols="30" rows="10"></textarea>
         <br>
+        <div class="botones">
                 <input type="submit" value="Limpiar"> 
                 <input type="reset" value="Enviar">
+        </div>
+
+        
     </form>
+   
 </section>
+    <div class="mailValido">
+        <h2>Ingrese un Email valido</h2>
+    </div>
 
 
-<section id="form-city-list">
-<!-- Sección donde se debe colocar el formulario, con el select y el
-botón de consultar -->
-</section>
-<section id="section-weather-result">
-<!-- Sección donde se debe mostrar el clima de la ciudad -->
-</section>
 </main>
 <footer>
 <p>
