@@ -3,68 +3,77 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-     Geneva, Verdana, sans-serif;
-    
+        Geneva, Verdana, sans-serif;
+
 
 }
+
 header {
     border-radius: 0px 0px 30px 30px;
-  }
 
-.titulo{
+}
+
+.titulo {
     margin-top: 5px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+
 }
-.titulo img{
+
+.titulo img {
     margin-right: 15px;
 }
 
-.current-page a{
+.current-page a {
     border-radius: 15px 15px 0px 0px;
 }
 
-#form-city-list select{
+#form-city-list select {
 
     padding: 10px 15px;
     height: 45px;
     border-radius: 6px;
 }
 
-#form-city-list button{
+#form-city-list button {
     padding: 10px 15px;
     height: 40px;
     border: 0;
     border-radius: 6px;
     background-color: #00594C;
-    color:  white;
+    color: white;
 }
 
-.card{
-  margin-top: 50px;
-  width: 350px;
-  height: 400px;
-  box-shadow: 18px 24px 24px 18px rgba(51, 49, 49, 0.26);
-  border-radius: 34px 34px 34px 34px;
-  align-items: center;
-  text-align: center;
+main{
+    padding-bottom: 50px; /*correcion espacio para que no quede pegado al footer*/
 }
-                /* Para que haya un margen del texto y la imagen fui probando con el margin-bottom y luego en .card p puse margin 0 para que no haya espacio entre las palabras*/
-.card h3{
+
+.card {
+    margin-top: 50px;
+    width: 350px;
+    height: 400px;
+    box-shadow: 18px 24px 24px 18px rgba(51, 49, 49, 0.26);
+    border-radius: 34px 34px 34px 34px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Para que haya un margen del texto y la imagen fui probando con el margin-bottom y luego en .card p puse margin 0 para que no haya espacio entre las palabras*/
+.card h3 {
     font-size: 25px;
 }
 
-.card img{
+.card img {
     margin-bottom: 60px;
     width: 150px;
 }
 
-.card p{
-    margin:0;
+.card p {
+    margin: 0;
 }
 
 /* No logre hacer la linea de borde del footer y de la navegacion */
+

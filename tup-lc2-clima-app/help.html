@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Help Clima</title>
-<!-- Estilos CSS -->
-<link rel="shortcut icon" href="/imgg/Icono.png" />
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/pages/help.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Clima</title>
+    <!-- Estilos CSS -->
+    <link rel="icon" type="image/png" href="./img/favicon.ico" sizes="32x32" />
+    <link rel="shortcut icon" href="./img/Icono.png" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/pages/help.css" />
 
-</head>
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/help.js" defer></script>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
-<body>
+    <script type="text/javascript">
+      (function(){
+      emailjs.init("Rj3JLbUbizpBpgnae");
+    })();
+    </script>
+  </head>
+
+  <body>
     <header>
-    <nav class="titulo">
-        <img src="/img/Icono.png" width="60px" height="60px">
+      <nav class="titulo">
+        <img src="./img/Icono.png" width="60px" height="60px" />
         <h1>
-        <span>Clima App</span>
+          <span>Clima App</span>
         </h1>
-    </nav>
-    
-    <nav class="secciones">
-    <ul> 
-        <li><a href="/index.html">Mi App</a></li>
-        <li><a href="/add-city.html">Agregar Ciudad</a></li>
-        <li class="current-page"><a href="#">Ayuda</a></li>
-    </ul>
-    </nav>
+      </nav>
+
+      <nav class="secciones">
+        <ul>
+          <li><a href="index.html">Mi App</a></li>
+          <li><a href="add-city.html">Agregar Ciudad</a></li>
+          <li class="current-page"><a href="#">Ayuda</a></li>
+        </ul>
+      </nav>
     </header>
-<!-- Contenido principal de la página -->
-<main>
-    <h2>Ayuda Clima App v.1.0</h2>
-    <p>Esta App te permite consultar el clima de una ciudad en particular utilizando la API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
-    <p>Para poder consultar el clima, primero debera <a href="/add-city.html" target="_blank">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestion desde la pagina <a href="/index.html" target="_blank"> Clima</a></p>
-<section id="formularioHelp">
-    <form action="">
-        
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre">
-        <br>
-            <label for="email">Email: </label>
-            <input type="text" id="email">
-        <br>
-            <label for="textarea">Mensaje:</label>
-            <textarea name="Mensaje"cols="30" rows="10"></textarea>
-        <br>
-        <div class="botones">
-                <input type="submit" value="Limpiar"> 
-                <input type="reset" value="Enviar">
+    <!-- Contenido principal de la página -->
+    <main>
+      <h2>Ayuda Clima App v.1.0</h2>
+      <p>
+        Esta App te permite consultar el clima de una ciudad en particular
+        utilizando la API de
+        <a href="https://openweathermap.org/api" target="_blank"
+          >OpenWeatherMap</a
+        >
+      </p>
+      <p>
+        Para poder consultar el clima, primero debera
+        <a href="/add-city.html" target="_blank">Agregar una ciudad</a> y luego
+        seleccionar la Ciudad en cuestion desde la pagina
+        <a href="/index.html" target="_blank"> Clima</a>
+      </p>
+      <form id="form">
+        <div class="field">
+          <label for="from_name">Nombre:</label>
+          <input type="text" name="from_name" id="name" required>
         </div>
-
-        
-    </form>
-   
-</section>
-    <div class="mailValido">
+        <div class="field">
+          <label for="email_id">Email:</label>
+          <input type="text" name="email_id" id="email" required>
+        </div>
+        <div class="field">
+          <label for="textarea">Mensaje:</label>
+            <textarea name="Mensaje"cols="30" rows="10" id="mensaje"></textarea>
+        </div>
+        <input type="submit" id="button" value="Enviar" onclick="enviarEmail()" >
+      </form>
+      <div class="mailValido" hidden>
         <h2>Ingrese un Email valido</h2>
-    </div>
-
-
-</main>
-<footer>
-<p>
-Desarrollado con ♥ - LC2
-</p>
-</footer>
-</body>
+      </div>
+    </main>
+    <footer>
+      <p>Desarrollado con ♥ - LC2</p>
+    </footer>
+  </body>
 </html>

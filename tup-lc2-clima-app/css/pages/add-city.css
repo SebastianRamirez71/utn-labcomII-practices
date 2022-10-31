@@ -3,102 +3,108 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-     Geneva, Verdana, sans-serif;
-    
+        Geneva, Verdana, sans-serif;
+
 
 }
 
 header {
     border-radius: 0px 0px 30px 30px;
-  }
+}
 
-.titulo{
+.titulo {
     margin-top: 5px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+
 }
-.titulo img{
+
+.titulo img {
     margin-right: 15px;
 }
 
-.current-page a{
+.current-page a {
     border-radius: 15px 15px 0px 0px;
 }
 
-.agregar{
+.add-cities{
     text-align: center;
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template-columns: 300px;
 }
-.agregar #nombre{
-    width: 215px;
+
+#inputCity {
+    width: auto;
     height: 35px;
     border-radius: 5px;
-    border:  1px solid;
+    border: 1px solid;
     margin-bottom: 10px;
 }
-.input{
+
+#buttonAdd{ /*boton */
+    margin-top: 20px;
     padding: 10px 15px;
     height: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 0;
-    border-radius: 6px;
+    border-radius: 16px;
     background-color: #00594C;
-    color:  white;
-}
-
-
-
-/* Para no sobrecargar codigo, inserte los h2 en una sola declaracion*/
-.exito h2, .error h2, .añadida h2{
-    font-size: medium;
     color: white;
-    text-align: center;
 }
 
-.exito{
+.error,.agregarCiudad,.yaAlmacenada{
+    margin-top: 50px;
+}
+
+
+/* ajuste el tamaño*/
+.agregarCiudad {
+    size: 200px;
     margin-top: 35px;
-    text-align: center;
+    text-align: center; 
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     background-color: #28a745;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 350px;
-    margin-left: 350px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 500px;
+    margin-left: 500px;
     margin-bottom: 35px;
+    
 }
 
 
-.error{
+.error {
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     background-color: #dc3545;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 350px;
-    margin-left: 350px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 500px;
+    margin-left: 500px;
     margin-bottom: 35px;
 }
 
 
-.añadida{
+.yaAlmacenada {
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     background-color: #ffc107;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 350px;
-    margin-left: 350px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 500px;
+    margin-left: 500px;
     margin-bottom: 35px;
 }
+

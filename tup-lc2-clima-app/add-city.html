@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agregar Ciudad</title>
-<!-- Estilos CSS -->
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/pages/add-city.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Ciudad</title>
+    <!-- Estilos CSS -->
+    <link rel="icon" type="image/png" href="./img/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/pages/add-city.css">
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/add-city.js" defer></script>
 </head>
 
 <body>
     <header>
-<nav class="titulo">
-    <img src="/img/Icono.png" width="60px" height="60px">
-    <h1>
-    <span>Clima App</span>
-    </h1>
-</nav>
-    
-<nav class="secciones">
-<ul> 
-    <li ><a href="/index.html">Mi App</a></li>
-    <li class="current-page"><a href="#">Agregar Ciudad</a></li>
-    <li><a href="/help.html">Ayuda</a></li>
-</ul>
-</nav>
+        <nav class="titulo">
+            <img src="./img/Icono.png" width="60px" height="60px">
+            <h1>
+                <span>Clima App</span>
+            </h1>
+        </nav>
+
+        <nav class="secciones">
+            <ul>
+                <li><a href="index.html">Mi App</a></li>
+                <li class="current-page"><a href="#">Agregar Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
     </header>
-<!-- Contenido principal de la página -->
-<main>
-<h2>Agregar Ciudad</h2>
-<form class="agregar">
-    
-    <p>
-        <label for="Agregar ciudad">Ingrese la ciudad a agregar: </label>
-        <INPUT type="text" id="nombre"><BR>
-        <input type="submit" value="Agregar" class="input"> 
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Agregar Ciudad</h2>
+
+        <form class="agregar">
+
+            <section class="add-cities">
+                <form id="add-city" class="add-city" action="">
+                    <label for="inputCity" id="label">Ingrese la ciudad a agregar:</label>
+                    <input id="inputCity" name="inputCity" type="text">
+                    <button type="button" id="buttonAdd">Agregar</button>
+                </form>
+            </section>
+        </form>
+
+        <div id="mensajesRes" class="add-city">
+
+        </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
         </p>
-</form>
-
-<nav class="exito">
-    <h2>Ciudad agregada con exito</h2>
-</nav>
-
-<nav class="error">
-    <h2>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</h2>
-</nav>
-
-<nav class="añadida">
-    <h2>La ciudad ingresada ya se encuentra almacenada</h2>
-</nav>
-
-</main>
-<footer>
-<p>
-Desarrollado con ♥ - LC2
-</p>
-</footer>
+    </footer>
 </body>
+
 </html>

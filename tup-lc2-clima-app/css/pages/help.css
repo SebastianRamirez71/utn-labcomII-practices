@@ -3,77 +3,73 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-     Geneva, Verdana, sans-serif;
-    
+        Geneva, Verdana, sans-serif;
+
 
 }
+
 header {
     border-radius: 0px 0px 30px 30px;
-  }
+}
 
-.titulo{
+.titulo {
     margin-top: 5px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+
 }
-.titulo img{
+
+.titulo img {
     margin-right: 15px;
 }
 
-.current-page a{
+.current-page a {
     border-radius: 15px 15px 0px 0px;
 }
-main p{
+
+main p {
     text-align: center start;
-    
+
 }
 
-#formularioHelp form{
+#form {
     align-items: center;
     justify-content: center;
     text-align: start;
     display: grid;
     grid-template-columns: 300px;
 }
-#formularioHelp input[type=text]{
+
+#form input[type=text] {
     width: 300px;
     height: 35px;
     border-radius: 5px;
-    border:  1px solid;
+    border: 1px solid;
 }
 
-#formularioHelp textarea{
+#form textarea {
     border-radius: 8px;
-    border:  1px solid;
+    border: 1px solid;
 }
-.botones{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.botones [type=submit]{
+
+
+
+#form #button{
     margin-right: 5px;
     padding: 10px 15px;
     height: 40px;
     border: 0;
     border-radius: 6px;
     background-color: #00594C;
-    color:  white;
+    color: white;
 }
 
-.botones [type=reset]{
-    padding: 10px 15px;
-    height: 40px;
-    border: 0;
-    border-radius: 6px;
-    background-color: #00594C;
-    color:  white;
-}
-.mailValido{
+
+
+.mailValido {
     margin-top: 50px;
     text-align: center;
     align-items: center;
@@ -86,7 +82,8 @@ main p{
     margin-left: 500px;
     margin-bottom: 35px;
 }
-.mailValido h2{
+
+.mailValido h2 {
     font-size: medium;
     color: white;
     text-align: center;
