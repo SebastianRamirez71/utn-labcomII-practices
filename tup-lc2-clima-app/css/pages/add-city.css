@@ -53,18 +53,15 @@ header {
   border-radius: 16px;
   background-color: #00594c;
   color: white;
+  margin-bottom: 30px;
 }
 
-.error,
-.agregarCiudad,
-.yaAlmacenada {
-  margin-top: 50px;
-}
+
 
 /* ajuste el tamaño*/
 .agregarCiudad {
-  size: 200px;
-  margin-top: 35px;
+
+  margin: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -72,12 +69,13 @@ header {
   background-color: #28a745;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-right: 500px;
-  margin-left: 500px;
-  margin-bottom: 35px;
+  height: 80px;
+  width: 355px;
+  
 }
 
 .error {
+  margin: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -85,12 +83,16 @@ header {
   background-color: #dc3545;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-right: 500px;
-  margin-left: 500px;
-  margin-bottom: 35px;
+  height: 80px;
+  width: 355px;
+
+  
 }
 
 .yaAlmacenada {
+  height: 80px;
+  width: 355px;
+  margin: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -98,7 +100,5 @@ header {
   background-color: #ffc107;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-right: 500px;
-  margin-left: 500px;
-  margin-bottom: 35px;
+
 }
